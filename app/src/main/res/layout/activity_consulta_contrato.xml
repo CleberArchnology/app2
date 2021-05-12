@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundocompletopng"
+    tools:context=".ActivityConsultaContrato">
+
+    <ListView
+        android:id="@+id/listViewContrato"
+        android:layout_width="356dp"
+        android:layout_height="288dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNovoContrato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleConContrato" />
+
+    <TextView
+        android:id="@+id/textViewTitleConContrato"
+        android:layout_width="168dp"
+        android:layout_height="96dp"
+        android:shadowColor="#000000"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="1"
+        android:text="Consulta Contrato"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenuConsulta2"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnNovoContrato"
+        android:layout_width="126dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button_beauty_full"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="Limpar"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#010127"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+</androidx.constraintlayout.widget.ConstraintLayout>

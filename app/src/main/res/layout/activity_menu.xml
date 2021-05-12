@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo"
+    tools:context=".ActivityMenu">
+
+    <ImageView
+        android:id="@+id/imageViewBInfo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBConsulta"
+        app:layout_constraintVertical_bias="0.122"
+        app:srcCompat="@drawable/sobre" />
+
+    <ImageView
+        android:id="@+id/imageViewBContato"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBPerfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        app:srcCompat="@drawable/contato" />
+
+    <ImageView
+        android:id="@+id/imageViewBPerfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        app:srcCompat="@drawable/perfil" />
+
+    <ImageView
+        android:id="@+id/imageViewBMapa"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBPerfil"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345"
+        app:srcCompat="@drawable/gps" />
+
+    <ImageView
+        android:id="@+id/imageViewBAtividade"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toEndOf="@+id/imageViewBConsulta"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBContato"
+        app:layout_constraintVertical_bias="0.096"
+        app:srcCompat="@drawable/atividadeicon" />
+
+    <ImageView
+        android:id="@+id/imageViewBConsulta"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBPerfil"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/consulta" />
+
+    <ImageView
+        android:id="@+id/imageViewBCadastro"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewBConsulta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBMapa"
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/cadastro_" />
+
+    <TextView
+        android:id="@+id/textViewCadastro"
+        android:layout_width="79dp"
+        android:layout_height="23dp"
+        android:text="Cadastro"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBCadastro"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBCadastro"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBCadastro"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBCadastro"
+        app:layout_constraintVertical_bias="0.900" />
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="51dp"
+        android:layout_height="23dp"
+        android:text="Sobre"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBInfo"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBInfo"
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBInfo"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBInfo"
+        app:layout_constraintVertical_bias="0.900" />
+
+    <TextView
+        android:id="@+id/textViewMapa"
+        android:layout_width="48dp"
+        android:layout_height="21dp"
+        android:text="Mapa"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBMapa"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBMapa"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBMapa"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBMapa"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/textViewContato"
+        android:layout_width="64dp"
+        android:layout_height="23dp"
+        android:text="Contato"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBContato"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBContato"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBContato"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBContato"
+        app:layout_constraintVertical_bias="0.896" />
+
+    <TextView
+        android:id="@+id/textViewConsulta"
+        android:layout_width="73dp"
+        android:layout_height="23dp"
+        android:text="Consulta"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBConsulta"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBConsulta"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBConsulta"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBConsulta"
+        app:layout_constraintVertical_bias="0.850" />
+
+    <TextView
+        android:id="@+id/textViewPerfil"
+        android:layout_width="48dp"
+        android:layout_height="21dp"
+        android:text="Perfil"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBPerfil"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBPerfil"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBPerfil"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBPerfil"
+        app:layout_constraintVertical_bias="0.898" />
+
+    <TextView
+        android:id="@+id/textViewAtividade"
+        android:layout_width="78dp"
+        android:layout_height="23dp"
+        android:text="Atividade"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBAtividade"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBAtividade"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBAtividade"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBAtividade"
+        app:layout_constraintVertical_bias="0.850" />
+
+    <TextView
+        android:id="@+id/textViewTitleMenu"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:shadowColor="#000000"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="1"
+        android:text="Menu"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.08" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

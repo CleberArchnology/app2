@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundocompletopng"
+    tools:context=".ActivityConsultaServico">
+
+    <Button
+        android:id="@+id/btnNovoServico"
+        android:layout_width="126dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button_beauty_full"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="1"
+        android:text="Limpar"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:backgroundTint="#010127"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <EditText
+        android:id="@+id/editTextProcurarConsultaServico"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/text_beauty_full"
+        android:ems="10"
+        android:hint="Procurar"
+        android:inputType="textPersonName"
+        android:padding="6sp"
+        android:textColor="#000000"
+        android:textColorHint="#7C7B7B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261" />
+
+    <ImageView
+        android:id="@+id/imageViewBtnProcurarConServ"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:src="@drawable/btnlupa"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextProcurarConsultaServico"
+        app:layout_constraintStart_toEndOf="@+id/editTextProcurarConsultaServico"
+        app:layout_constraintTop_toTopOf="@+id/editTextProcurarConsultaServico"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewTitleConServico"
+        android:layout_width="168dp"
+        android:layout_height="96dp"
+        android:shadowColor="#000000"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="1"
+        android:text="Consulta Serviço"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenuConsulta"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextDescConsultaContrato"
+        android:layout_width="165dp"
+        android:layout_height="111dp"
+        android:background="@drawable/text_beauty_full"
+        android:ems="10"
+        android:hint="Descrição"
+        android:inputType="textPersonName"
+        android:padding="6sp"
+        android:textColor="#000000"
+        android:textColorHint="#7C7B7B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextConsultaNomeServico"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <EditText
+        android:id="@+id/editTextConsultaNomeServico"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:background="@drawable/text_beauty_full"
+        android:ems="10"
+        android:hint="Nome serviço"
+        android:inputType="textPersonName"
+        android:padding="6sp"
+        android:textColor="#000000"
+        android:textColorHint="#7C7B7B"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

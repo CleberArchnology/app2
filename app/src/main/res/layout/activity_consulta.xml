@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundocompletopng"
+    tools:context=".ActivityConsulta">
+
+    <ImageView
+        android:id="@+id/imageViewBContrato"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintStart_toEndOf="@+id/imageViewConSocio"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402"
+        app:srcCompat="@drawable/contrato" />
+
+    <TextView
+        android:id="@+id/textViewContrato"
+        android:layout_width="71dp"
+        android:layout_height="20dp"
+        android:text="Contrato"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewBContrato"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewBContrato"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBContrato"
+        app:layout_constraintTop_toTopOf="@+id/imageViewBContrato"
+        app:layout_constraintVertical_bias="0.850" />
+
+    <ImageView
+        android:id="@+id/imageViewConSocio"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.402"
+        app:srcCompat="@drawable/funcionario" />
+
+    <TextView
+        android:id="@+id/textViewConSocio"
+        android:layout_width="50dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:text="Sócio"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewConSocio"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewConSocio"
+        app:layout_constraintStart_toStartOf="@+id/imageViewPartner"
+        app:layout_constraintTop_toTopOf="@+id/imageViewConSocio"
+        app:layout_constraintVertical_bias="0.886" />
+
+    <ImageView
+        android:id="@+id/imageViewConCliente"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageViewBContrato"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBContrato"
+        app:layout_constraintVertical_bias="0.261"
+        app:srcCompat="@drawable/usuario" />
+
+    <TextView
+        android:id="@+id/textViewConCliente"
+        android:layout_width="61dp"
+        android:layout_height="23dp"
+        android:text="Cliente"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewConCliente"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewConCliente"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/imageViewConCliente"
+        app:layout_constraintTop_toTopOf="@+id/imageViewConCliente"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <ImageView
+        android:id="@+id/imageViewConServicos"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewConSocio"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewConSocio"
+        app:layout_constraintVertical_bias="0.261"
+        app:srcCompat="@drawable/servicos" />
+
+    <TextView
+        android:id="@+id/textViewConServicos"
+        android:layout_width="74dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="12dp"
+        android:text="Serviços"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewConServicos"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewConServicos"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="@+id/imageViewConServicos"
+        app:layout_constraintTop_toTopOf="@+id/imageViewContract"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <TextView
+        android:id="@+id/textViewTitleConsulta"
+        android:layout_width="177dp"
+        android:layout_height="56dp"
+        android:shadowColor="#000000"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="1"
+        android:text="Consulta"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.078" />
+
+    <TextView
+        android:id="@+id/textViewBackToMenuConsulta"
+        android:layout_width="69dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="4dp"
+        android:text="Voltar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
